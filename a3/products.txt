@@ -1,0 +1,8 @@
+ID	OID	Title	Description	Option	Price	Type	Image
+x001	SP	Electro Bolt	Bring your Wrench and zap your enemies. The ol' 1..2..punch never fails with ELECTRO JOLT! Now powering a flying city 5 minutes at a time with the new and improved SHOCK JOCKEY Vigor on SALE! A new adventure awaits all that haven't been fried!	Small Plasmid	9.95	El
+x001	LP	Electro Bolt	Bring your Wrench and zap your enemies. The ol' 1..2..punch never fails with ELECTRO JOLT! Now powering a flying city 5 minutes at a time with the new and improved SHOCK JOCKEY Vigor on SALE! A new adventure awaits all that haven't been fried!	Large Plasmid	19.95	El
+x001	V	Electro Bolt	Bring your Wrench and zap your enemies. The ol' 1..2..punch never fails with ELECTRO JOLT! Now powering a flying city 5 minutes at a time with the new and improved SHOCK JOCKEY Vigor on SALE! A new adventure awaits all that haven't been fried!	Vigor	149.95	El
+x002	SP	Hypnotise Big Daddy	Beat your enemies to a pulp using the Monsters of the sea and protectors of Rapture as your own footsoldiers!	Small Plasmid	9.95	Mc
+x002	LP	Hypnotise Big Daddy	Beat your enemies to a pulp using the Monsters of the sea and protectors of Rapture as your own footsoldiers!	Large Plasmid	19.95	Mc
+x003	V	Bucking Bronco	A new Vigor only genetic enhancement to fling your enemies into the air and make them vulnerable	Vigor	149.95	El
+x004	GT	SportsBoost	For the atheletic Man!	GeneTonic	500.00	En

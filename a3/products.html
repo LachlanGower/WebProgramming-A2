@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset="utf-8">
+		<title>Assignment 3</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Keep wireframe.css for debugging, add your css to style.css -->
+		<link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+		<link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
+		<script src='../wireframe.js'></script>
+		<style>
+			<?php
+			// This PHP code inserts CSS to style the "current page" link in the nav area
+			$here = $_SERVER['SCRIPT_NAME']; 
+			$bits = explode('/',$here); 
+			$filename = $bits[count($bits)-1]; 
+			echo "nav a[href$='$filename'] {
+			box-shadow: 1px 1px 1px 2px navy;
+			}";
+			?>
+
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<div>
+				<a href = "products.php">
+					Browse our Products
+				</a>
+			</div>
+			<div>
+				<a href="index.php">
+					<header >
+						The Gatherer's Garden
+					</header>
+					<span>Genetic &nbsp;Modifications</span>
+				</a>
+			</div>
+			<div>
+				<a href = "cart.php">
+					Go to Cart
+				</a>
+			</div>
+		</nav>
+
+		<main id = "center">
+			<article class = "product_container">
+				<article class = "product">
+					<section class = "name">
+						Electro Bolt
+					</section>
+					<section class = "form">
+						<form action = "https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" target="_new" method="post" onsubmit = "return validation()">
+							<input type="hidden" name="id" value="0x0000"/>
+
+							<div class = "flexcol">
+								<div class = "image">
+									pretend i am image
+								</div>
+								<div class = "description">
+									Bring your Wrench and zap your enemies. The ol' 1..2..punch never fails with ELECTRO JOLT! Now powering a flying city 5 minutes at a time with the new and improved SHOCK JOCKEY Vigor on SALE! A new adventure awaits all that haven't been fried!
+								</div>
+							</div>
+							<div class = "flexcol">
+								<div class = "quantitycontainer">
+									Type:&nbsp;
+									<select class = "type" name='option' size='1'>
+										<option value='P1' >Plasmid Type 1</option>
+										<option value='P2' >Plasmid Type 2</option>
+										<option value='V' >Vigor</option>
+									</select>
+									<br/>
+									<br>
+									Quantity: 
+									<div id = "quantity_box">
+										<div class = "add" onclick="quantity(-1)">-</div>
+
+										<input type="text" class = "quantity"  name="qty" pattern="^[0-9]+" value="1" />
+
+										<div class = "add" onclick="quantity(1)">+</div>
+									</div>
+									<div class = "product_price">
+										$4.99
+									</div>
+									<div class = "submitdiv">
+
+										<input class = " submit" type="submit" value="Add To Cart"/>
+									</div>
+								</div>
+
+							</div>
+						</form>
+
+					</section>
+				</article>
+				<article class = "products">
+		<section>
+			<span class = "title">Elemental</span>
+			<div class="prodcar">
+				<?php
+					createItems("El");
+				?>
+			</div>
+		</section>
+		<section>
+			<span class = "title">Mind Control</span>
+			<div class="prodcar">
+				<div class = "thumbnail">
+					<div class = "thumg">test</div>
+					<span>test</span>
+				</div>
+			</div>
+		</section>
+		<section>
+			<span class = "title">Enhancements</span>
+			<div class="prodcar">
+				<?php
+					createItems("En");
+				?>
+			</div>
+		</section>
+	</article>
+			</article>
+		</main>
+
+		<footer id = "south">
+			<div>&copy;<script>
+				document.write(new Date().getFullYear());
+				</script> Put your name(s), student number(s) and group name here.</div>
+			<div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
+			<div>Maintain links to your <a href='products.txt'>products spreadsheet</a> and <a href='orders.txt'>orders spreadsheet</a> here. <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+		</footer
+			</body>
+			</html>
